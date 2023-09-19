@@ -1,0 +1,3 @@
+<app-add-task (sendTask)="newTask($event)"></app-add-task>
+<br>
+<app-task-list [addTaskList]="taskFromAddTask" (sendIndex)="updateList($event)"></app-task-list>

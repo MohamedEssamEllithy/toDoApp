@@ -1,0 +1,14 @@
+<div class="container ">
+  <br>
+  <h4>MY TASKS </h4>
+  <hr>
+      <br>
+    <div class="input-group w-100 md-2" *ngFor="let task of addTaskList ; let i =index"  > 
+<label class=" w-75 border border-dark  bg-light  rounded p-3"  >{{task}}</label> 
+ <!-- <button class="btn btn-outline-secondary m-1 " type="button">completed</button> -->
+  <button class="btn btn-outline-secondary m-1" type="button" (click)="delTask(i)">Delete</button>
+  <!-- <button class="btn  " type="button">completed</button> -->
+  <hr>
+     <br>
+</div>
+</div>
